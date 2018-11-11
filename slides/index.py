@@ -129,18 +129,19 @@ past_workshops.sort(key=lambda i: i["date"], reverse=True)
 self_paced = [i for i in items if not i.get("date")]
 recorded_workshops = [i for i in items if i.get("video")]
 
-template = jinja2.Template(TEMPLATE)
-with open("index.html", "w") as f:
-    f.write(template.render(
-    	title="Container Training",
-    	coming_soon=coming_soon,
-    	past_workshops=past_workshops,
-    	self_paced=self_paced,
-    	recorded_workshops=recorded_workshops
-    	).encode("utf-8"))
+# TODO: gseng - find another way to build the index page
+# template = jinja2.Template(TEMPLATE)
+# with open("index.html", "w") as f:
+#     f.write(template.render(
+#     	title="Container Training",
+#     	coming_soon=coming_soon,
+#     	past_workshops=past_workshops,
+#     	self_paced=self_paced,
+#     	recorded_workshops=recorded_workshops
+#     	).encode("utf-8"))
 
-with open("past.html", "w") as f:
-	f.write(template.render(
-		title="Container Training",
-		all_past_workshops=past_workshops
-		).encode("utf-8"))
+# with open("past.html", "w") as f:
+# 	f.write(template.render(
+# 		title="Container Training",
+# 		all_past_workshops=past_workshops
+# 		).encode("utf-8"))

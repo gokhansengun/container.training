@@ -186,11 +186,12 @@ div img {
 
 li p { line-height: 1.25em; }
 
-div.extra-details {
+/* TODO: gseng - find another way to show two bkg images */
+/* div.extra-details {
   background-image: url("images/extra-details.png");
   background-position: 0.5% 1%;
   background-size: 4%;
-}
+} */
 
 /* This is used only for the history slide (the only table in this doc) */
 td {
