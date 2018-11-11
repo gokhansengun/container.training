@@ -29,6 +29,8 @@ We want to build a container that compiles a basic "Hello world" program in C.
 Here is the program, `hello.c`:
 
 ```bash
+#include <stdio.h>
+
 int main () {
   puts("Hello, world!");
   return 0;
