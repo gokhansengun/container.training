@@ -4,8 +4,9 @@ case "$1" in
 once)
   ./index.py
   for YAML in *.yml; do
-    ./markmaker.py $YAML > $YAML.html || { 
-      rm $YAML.html
+    filename=${YAML%.yml}
+    ./markmaker.py $YAML > $filename.html || { 
+      rm $filename.html
       break
     }
   done
