@@ -1,0 +1,24 @@
+title: |
+  Deploying and Managing Applications
+  with OpenShift
+
+#chat: "[Slack](https://dockercommunity.slack.com/messages/C7GKACWDV)"
+#chat: "[Gitter](https://gitter.im/jpetazzo/workshop-yyyymmdd-city)"
+chat: "In person!"
+
+gitrepo: github.com/gokhansengun/container.training
+
+slides: https://training.gokhansengun.com/openshift-intro.html
+
+exclude:
+- self-paced
+
+chapters:
+- shared/title.md
+- openshift/about-slides.md
+- shared/toc.md
+- - openshift/elevator-pitch.md
+  - openshift/getting-started.md
+  - openshift/deploy-docker-image.md
+  - openshift/source-to-image.md
+- shared/thankyou.md
