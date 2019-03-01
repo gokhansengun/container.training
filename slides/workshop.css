@@ -8,9 +8,9 @@
 .remark-slide-content {
   font-family: 'Droid Serif';
   font-size: 25px !important;
-  background-image: url('logo.png');
+  /* background-image: url('logo.png');
   background-size: 15%;
-  background-position: bottom right;
+  background-position: bottom right; */
 }
 
 .emoji {
