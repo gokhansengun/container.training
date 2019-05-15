@@ -36,7 +36,7 @@
 - While the command line tool is awesome, web console is equally awesome
 
 .exercise[
-- Open the web console from `https://cluster-xx.openshift.gokhansengun.com:8443/console`
+- Open the web console from `https://cluster-xx.do.gokhansengun.com:8443/console`
 
 - Yes, it has a self-signed certificate and your browsers warns you :-) It is ok, go ahead
 
