@@ -22,22 +22,31 @@ At the end of this lesson, you will have:
 In your Docker environment, just run the following command:
 
 ```bash
-$ docker run busybox echo hello world
-hello world
+$ docker run hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+...
+
 ```
 
 (If your Docker install is brand new, you will also see a few extra lines,
-corresponding to the download of the `busybox` image.)
+corresponding to the download of the `hello-world` image.)
 
 ---
 
 ## That was our first container!
 
-* We used one of the smallest, simplest images available: `busybox`.
+* We used one of the smallest, simplest images available: `hello-world`.
 
-* `busybox` is typically used in embedded systems (phones, routers...)
+* We ran a single process and it echo'ed a lot of lines.
 
-* We ran a single process and echo'ed `hello world`.
+* The image was purposed to do one thing and it did it well.
+
+(Unix philosophy, do one thing and do it well)
 
 ---
 
