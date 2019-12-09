@@ -206,31 +206,6 @@ class: extra-details
 
 - Our rollout is stuck at this point!
 
----
-
-## Checking the dashboard during the bad rollout
-
-If you haven't deployed the Kubernetes dashboard earlier, just skip this slide.
-
-.exercise[
-
-- Check which port the dashboard is on:
-  ```bash
-  kubectl -n kube-system get svc socat
-  ```
-
-]
-
-Note the `3xxxx` port.
-
-.exercise[
-
-- Connect to http://oneofournodes:3xxxx/
-
-<!-- ```open https://node1:3xxxx/``` -->
-
-]
-
 --
 
 - We have failures in Deployments, Pods, and Replica Sets

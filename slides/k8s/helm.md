@@ -22,7 +22,9 @@
 
 - `helm` is a CLI tool
 
-- `tiller` is its companion server-side component
+- In Helm v2 `tiller` was its companion server-side component
+
+- Helm v3 does not need a server-side component
 
 - A "chart" is an archive containing templatized YAML bundles
 
@@ -49,54 +51,6 @@
   ```
 
 ]
-
----
-
-## Installing Tiller
-
-- Tiller is composed of a *service* and a *deployment* in the `kube-system` namespace
-
-- They can be managed (installed, upgraded...) with the `helm` CLI
-
-.exercise[
-
-- Deploy Tiller:
-  ```bash
-  helm init
-  ```
-
-]
-
-If Tiller was already installed, don't worry: this won't break it.
-
-At the end of the install process, you will see:
-
-```
-Happy Helming!
-```
-
----
-
-## Fix account permissions
-
-- Helm permission model requires us to tweak permissions
-
-- In a more realistic deployment, you might create per-user or per-team
-  service accounts, roles, and role bindings
-
-.exercise[
-
-- Grant `cluster-admin` role to `kube-system:default` service account:
-  ```bash
-  kubectl create clusterrolebinding add-on-cluster-admin \
-      --clusterrole=cluster-admin --serviceaccount=kube-system:default
-  ```
-
-]
-
-(Defining the exact roles and permissions on your cluster requires
-a deeper knowledge of Kubernetes' RBAC model. The command above is
-fine for personal and development clusters.)
 
 ---
 
