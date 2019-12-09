@@ -48,10 +48,9 @@ chapters:
   # - k8s/gitworkflows.md
   - k8s/prometheus.md
 - - k8s/volumes.md
-  - k8s/build-with-docker.md
+  # - k8s/build-with-docker.md
   - k8s/configuration.md
-- - k8s/owners-and-dependents.md
-  - k8s/statefulsets.md
+- - k8s/statefulsets.md
   - k8s/portworx.md
 - - k8s/whatsnext.md
   - k8s/links.md

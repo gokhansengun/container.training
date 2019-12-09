@@ -96,28 +96,7 @@ We need to:
 
 ---
 
-## Step 1: install Helm
-
-- If we already installed Helm earlier, these commands won't break anything
-
-.exercice[
-
-- Install Tiller (Helm's server-side component) on our cluster:
-  ```bash
-  helm init
-  ```
-
-- Give Tiller permission to deploy things on our cluster:
-  ```bash
-  kubectl create clusterrolebinding add-on-cluster-admin \
-      --clusterrole=cluster-admin --serviceaccount=kube-system:default
-  ```
-
-]
-
----
-
-## Step 2: install Prometheus
+## Install Prometheus
 
 - Skip this if we already installed Prometheus earlier
 
