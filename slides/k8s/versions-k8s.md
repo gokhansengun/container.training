@@ -2,7 +2,7 @@
 
 - Kubernetes 1.15.3
 - Docker Engine 18.06.1-ce
-- Docker Compose 1.21.1
+- Docker Compose 1.22.0 
 
 
 .exercise[
