@@ -22,7 +22,7 @@ In this part, we will:
 
 ## The plan
 
-- Build on our control node (`node1`)
+- Build on our control node (`master-0`)
 
 - Tag images so that they are named `$REGISTRY/servicename`
 
@@ -399,7 +399,7 @@ We should now see the `worker`, well, working happily.
 
 - Open the web UI in your browser (http://node-ip-address:3xxxx/)
 
-<!-- ```open http://node1:3xxxx/``` -->
+<!-- ```open http://master-0:3xxxx/``` -->
 
 ]
 

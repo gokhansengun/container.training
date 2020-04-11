@@ -489,10 +489,10 @@ By "disrupt" we mean: "disconnect it from the network".
 
 - Check that the node can't communicate with other nodes:
   ```
-  ping node1
+  ping master-0
   ```
 
-- Logout to go back on `node1`
+- Logout to go back on `master-0`
 
 <!-- ```keys ^D``` -->
 

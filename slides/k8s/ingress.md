@@ -180,7 +180,7 @@
 
   - enable `hostNetwork`
 
-  - add a *toleration* so that Traefik also runs on `node1`
+  - add a *toleration* so that Traefik also runs on `master-0`
 
 ---
 
@@ -208,13 +208,13 @@ class: extra-details
 
 - Check our nodes specs:
   ```bash
-  kubectl get node node1 -o json | jq .spec
-  kubectl get node node2 -o json | jq .spec
+  kubectl get node master-0 -o json | jq .spec
+  kubectl get node node-0 -o json | jq .spec
   ```
 
 ]
 
-We should see a result only for `node1` (the one with the control plane):
+We should see a result only for `master-0` (the one with the control plane):
 
 ```json
   "taints": [
@@ -273,7 +273,7 @@ The result should include:
   }
 ```
 
-It means: "bypass the exact taint that we saw earlier on `node1`."
+It means: "bypass the exact taint that we saw earlier on `master-0`."
 
 ---
 
@@ -346,7 +346,7 @@ This is normal: we haven't provided any ingress rule yet.
 
 - Check out `http://cheddar.A.B.C.D.nip.io`
 
-  (replacing A.B.C.D with the IP address of `node1`)
+  (replacing A.B.C.D with the IP address of `master-0`)
 
 - We should get the same `404 page not found` error
 
@@ -362,7 +362,7 @@ This is normal: we haven't provided any ingress rule yet.
 
 .exercise[
 
-- Go to `http://node1:8080` (replacing `node1` with its IP address)
+- Go to `http://master-0:8080` (replacing `master-0` with its IP address)
 
 ]
 
@@ -439,7 +439,7 @@ spec:
 
 - Edit the file `~/container.training/k8s/ingress.yaml`
 
-- Replace A.B.C.D with the IP address of `node1`
+- Replace A.B.C.D with the IP address of `master-0`
 
 - Apply the file
 

@@ -82,7 +82,7 @@ class: in-person
 
 - You can automatically SSH from one VM to another
 
-- The nodes have aliases: `node1`, `node2`, etc.
+- The nodes have aliases: `master-0`, `node-0`, etc.
 
 ---
 
@@ -178,7 +178,7 @@ class: in-person
 
 .exercise[
 
-- Log into the first VM (`node1`) with your SSH client
+- Log into the first VM (`master-0`) with your SSH client
 
 <!--
 ```bash
@@ -196,11 +196,11 @@ fi
 ```
 -->
 
-- Check that you can SSH (without password) to `node2`:
+- Check that you can SSH (without password) to `node-0`:
   ```bash
-  ssh node2
+  ssh node-0
   ```
-- Type `exit` or `^D` to come back to `node1`
+- Type `exit` or `^D` to come back to `master-0`
 
 <!-- ```bash exit``` -->
 
@@ -256,13 +256,13 @@ You will need a Docker ID to use Play-With-Docker.
 
 ---
 
-## We will (mostly) interact with node1 only
+## We will (mostly) interact with master-0 only
 
 *These remarks apply only when using multiple nodes, of course.*
 
-- Unless instructed, **all commands must be run from the first VM, `node1`**
+- Unless instructed, **all commands must be run from the first VM, `master-0`**
 
-- We will only checkout/copy the code on `node1`
+- We will only checkout/copy the code on `master-0`
 
 - During normal operations, we do not need access to the other nodes
 

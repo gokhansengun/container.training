@@ -234,7 +234,7 @@ The `kube-system` namespace is used for the control plane.
 
 - the `READY` column indicates the number of containers in each pod
 
-- the pods with a name ending with `-node1` are the master components
+- the pods with a name ending with `-master-0` are the master components
   <br/>
   (they have been specifically "pinned" to the master node)
 

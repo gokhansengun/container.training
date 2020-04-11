@@ -10,7 +10,7 @@ fi
 ```
 -->
 
-- Clone the repository on `node1`:
+- Clone the repository on `master-0`:
   ```bash
   git clone https://@@GITREPO@@
   ```
@@ -197,13 +197,13 @@ class: pic
 
 .exercise[
 
-- With a web browser, connect to `node1` on port 8000
+- With a web browser, connect to `master-0` on port 8000
 
 - Remember: the `nodeX` aliases are valid only on the nodes themselves
 
 - In your browser, you need to enter the IP address of your node
 
-<!-- ```open http://node1:8000``` -->
+<!-- ```open http://master-0:8000``` -->
 
 ]
 

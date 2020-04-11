@@ -69,19 +69,19 @@ Platform:"linux/amd64"}
 
 ---
 
-## Copying the configuration file from `node1`
+## Copying the configuration file from `master-0`
 
-- The `~/.kube/config` file that is on `node1` contains all the credentials we need
+- The `~/.kube/config` file that is on `master-0` contains all the credentials we need
 
 - Let's copy it over!
 
 .exercise[
 
-- Copy the file from `node1`; if you are using macOS or Linux, you can do:
+- Copy the file from `master-0`; if you are using macOS or Linux, you can do:
   ```
   scp `USER`@`X.X.X.X`:.kube/config ~/.kube/config
-  # Make sure to replace X.X.X.X with the IP address of node1,
-  # and USER with the user name used to log into node1!
+  # Make sure to replace X.X.X.X with the IP address of master-0,
+  # and USER with the user name used to log into master-0!
   ```
 
 - If you are using Windows, adapt these instructions to your SSH client
@@ -98,7 +98,7 @@ Platform:"linux/amd64"}
 
 - Look for the `server:` address:
 
-  - if it matches the public IP address of `node1`, you're good!
+  - if it matches the public IP address of `master-0`, you're good!
 
   - if it is anything else (especially a private IP address), update it!
 
@@ -106,7 +106,7 @@ Platform:"linux/amd64"}
   ```bash
   kubectl config set-cluster kubernetes --server=https://`X.X.X.X`:6443
   kubectl config set-cluster kubernetes --insecure-skip-tls-verify
-  # Make sure to replace X.X.X.X with the IP address of node1!
+  # Make sure to replace X.X.X.X with the IP address of master-0!
   ```
 
 ---
@@ -122,7 +122,7 @@ class: extra-details
   - `kubernetes.default.svc`
   - `kubernetes.default.svc.cluster.local`
   - the ClusterIP address of the `kubernetes` service
-  - the hostname of the node hosting the control plane (e.g. `node1`)
+  - the hostname of the node hosting the control plane (e.g. `master-0`)
   - the IP address of the node hosting the control plane
 
 - On most clouds, the IP address of the node is an internal IP address

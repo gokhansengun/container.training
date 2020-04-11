@@ -95,7 +95,7 @@ You'll want the `3xxxx` port.
 
 - Connect to http://oneofournodes:3xxxx/
 
-<!-- ```open http://node1:3xxxx/``` -->
+<!-- ```open http://master-0:3xxxx/``` -->
 
 ]
 
@@ -109,7 +109,7 @@ The dashboard will then ask you which authentication you want to use.
 
   - token (associated with a role that has appropriate permissions)
 
-  - kubeconfig (e.g. using the `~/.kube/config` file from `node1`)
+  - kubeconfig (e.g. using the `~/.kube/config` file from `master-0`)
 
   - "skip" (use the dashboard "service account")
 
