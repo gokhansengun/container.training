@@ -46,7 +46,7 @@ Docker Machine, the user name will probably be different.
 
 In the official environment, aliases are seeded in
 `/etc/hosts`, allowing you to resolve node IP addresses
-with the aliases `node1`, `node2`, etc.; if you use
+with the aliases `master-0`, `node-0`, etc.; if you use
 Docker Machine, you will have to lookup the IP addresses
 with the `docker-machine ip nodeX` command instead.
 

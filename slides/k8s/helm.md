@@ -69,7 +69,7 @@
 
 - View charts related to `prometheus`:
   ```bash
-  helm search prometheus
+  helm search repo prometheus
   ```
 
 ]
@@ -88,7 +88,7 @@
 
 - Install the Prometheus metrics collector on our cluster:
   ```bash
-  helm install stable/prometheus \
+  helm install prom stable/prometheus \
          --set server.service.type=NodePort \
          --set server.persistentVolume.enabled=false
   ```
