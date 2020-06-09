@@ -165,9 +165,3 @@ Would we give the same answers to the questions on the previous slide?
 
 - Funded by corporate memberships.
 
----
-
-class: pic
-
-![Cloud Native Landscape](https://raw.githubusercontent.com/cncf/landscape/master/landscape/CloudNativeLandscape_latest.png)
-

@@ -161,17 +161,3 @@ and try those commands.
 * The REPL doesn't know that you just attached, and doesn't print anything
 
 * Try hitting `^L` or `Enter`
-
----
-
-class: extra-details
-
-## SIGWINCH
-
-* When you `docker attach`, the Docker Engine sends SIGWINCH signals to the container.
-
-* SIGWINCH = WINdow CHange; indicates a change in window size.
-
-* This will cause some CLI and TUI programs to redraw the screen.
-
-* But not all of them.
