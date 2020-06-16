@@ -24,7 +24,8 @@
 
 - Let's start a replicated `nginx` deployment:
   ```bash
-  kubectl run yanginx --image=nginx --replicas=3
+  kubectl create deployment yanginx --image=nginx
+  kubectl scale deployment yanginx --replicas=3
   ```
 
 - Once it's up, check the corresponding pods:

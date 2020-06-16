@@ -258,7 +258,7 @@ The master node has [taints](https://kubernetes.io/docs/concepts/configuration/t
 
 - All these pods have a `run=rng` label:
 
-  - the first pod, because that's what `kubectl run` does
+  - the first pod, because that's what `kubectl create deployment` does
   - the other ones (in the daemon set), because we
     *copied the spec from the first one*
 

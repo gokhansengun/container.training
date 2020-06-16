@@ -1,6 +1,6 @@
 # Managing stacks with Helm
 
-- We created our first resources with `kubectl run`, `kubectl expose` ...
+- We created our first resources with `kubectl create deployment`, `kubectl expose` ...
 
 - We have also created resources by loading YAML files with `kubectl apply -f`
 

@@ -126,15 +126,15 @@ Exactly what we need!
 
 - This will match all objects having that label (regardless of the value)
 
-- Everything created with `kubectl run` has a label `run`
+- Everything created with `kubectl create deployment` has a label `app`
 
-- We can use that property to view the logs of all the pods created with `kubectl run`
+- We can use that property to view the logs of all the pods created with `kubectl create deployment`
 
 .exercise[
 
-- View the logs for all the things started with `kubectl run`:
+- View the logs for all the things started with `kubectl create deployment`:
   ```bash
-  stern -l run
+  stern -l app
   ```
 
 <!--

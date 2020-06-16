@@ -61,7 +61,8 @@ Under the hood: `kube-proxy` is using a userland proxy and a bunch of `iptables`
 
 - Start a bunch of HTTP servers:
   ```bash
-  kubectl run httpenv --image=jpetazzo/httpenv --replicas=10
+  kubectl create deployment httpenv --image=jpetazzo/httpenv
+  kubectl scale deployment httpenv --replicas=10
   ```
 
 - Watch them being started:
