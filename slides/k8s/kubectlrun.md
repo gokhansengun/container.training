@@ -14,7 +14,7 @@
 
 ---
 
-## Starting a simple pod with `kubectl run`
+## Starting a simple pod with `kubectl create deployment`
 
 - We need to specify at least a *name* and the image we want to use
 
@@ -23,18 +23,18 @@
 - Let's ping `1.1.1.1`, Cloudflare's 
   [public DNS resolver](https://blog.cloudflare.com/announcing-1111/):
   ```bash
-  kubectl run pingpong --image alpine ping 1.1.1.1
+  kubectl create deployment pingpong --image gsengun/ping
   ```
 
 <!-- ```hide kubectl wait deploy/pingpong --for condition=available``` -->
 
 ]
 
---
+---
 
-## Behind the scenes of `kubectl run`
+## Behind the scenes of `kubectl create deployment`
 
-- Let's look at the resources that were created by `kubectl run`
+- Let's look at the resources that were created by `kubectl create deployment`
 
 .exercise[
 
@@ -81,7 +81,7 @@ Note: as of 1.10.1, resource types are displayed in more detail.
 
 ## Our `pingpong` deployment
 
-- `kubectl run` created a *deployment*, `deployment.apps/pingpong`
+- `kubectl create deployment` created a *deployment*, `deployment.apps/pingpong`
 
 ```
 NAME                       DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
@@ -211,34 +211,9 @@ We could! But the *deployment* would notice it right away, and scale back to the
 
 - What if we wanted to start a "one-shot" container that *doesn't* get restarted?
 
-- We could use `kubectl run --restart=OnFailure` or `kubectl run --restart=Never`
+- We could use `kubectl run pingpong ...`
 
 - These commands would create *jobs* or *pods* instead of *deployments*
-
-- Under the hood, `kubectl run` invokes "generators" to create resource descriptions
-
-- We could also write these resource descriptions ourselves (typically in YAML),
-  <br/>and create them on the cluster with `kubectl apply -f` (discussed later)
-
-- With `kubectl run --schedule=...`, we can also create *cronjobs*
-
----
-
-## What about that deprecation warning?
-
-- As we can see from the previous slide, `kubectl run` can do many things
-
-- The exact type of resource created is not obvious
-
-- To make things more explicit, it is better to use `kubectl create`:
-
-  - `kubectl create deployment` to create a deployment
-
-  - `kubectl create job` to create a job
-
-- Eventually, `kubectl run` will be used only to start one-shot pods
-
-  (see https://github.com/kubernetes/kubernetes/pull/68132)
 
 ---
 
@@ -270,13 +245,13 @@ We could! But the *deployment* would notice it right away, and scale back to the
 
 - A selector is a logic expression using *labels*
 
-- Conveniently, when you `kubectl run somename`, the associated objects have a `run=somename` label
+- Conveniently, when you `kubectl crete deployment somename`, the associated objects have a `app=somename` label
 
 .exercise[
 
-- View the last line of log from all pods with the `run=pingpong` label:
+- View the last line of log from all pods with the `app=pingpong` label:
   ```bash
-  kubectl logs -l run=pingpong --tail 1
+  kubectl logs -l app=pingpong --tail 1
   ```
 
 ]
