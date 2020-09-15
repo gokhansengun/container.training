@@ -12,7 +12,7 @@ fi
 
 - Clone the repository on `master-0`:
   ```bash
-  git clone https://@@GITREPO@@
+  git clone https://github.com/gokhansengun/container.training
   ```
 
 ]
