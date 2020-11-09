@@ -4,7 +4,7 @@
 
 --
 
-- We used `kubeadm` on freshly installed VM instances running Ubuntu 16.04 LTS
+- We used `kubeadm` on freshly installed VM instances running Ubuntu 20.04 LTS
 
     1. Install Docker
 
