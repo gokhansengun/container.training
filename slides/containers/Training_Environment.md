@@ -103,7 +103,7 @@ Once logged in, make sure that you can run a basic Docker command:
 ```bash
 $ docker version
 Client: Docker Engine - Community
- Version:           19.03.11
+ Version:           19.03.13
  API version:       1.40
  Go version:        go1.13.10
  Git commit:        42e35e61f3
@@ -113,7 +113,7 @@ Client: Docker Engine - Community
 
 Server: Docker Engine - Community
  Engine:
-  Version:          19.03.11
+  Version:          19.03.13
   API version:      1.40 (minimum version 1.12)
   Go version:       go1.13.10
   Git commit:       42e35e61f3

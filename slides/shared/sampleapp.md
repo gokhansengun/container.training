@@ -34,7 +34,7 @@ Let's start this before we look around, as downloading will take a little time..
 
 - Go to the `dockercoins` directory, in the cloned repo:
   ```bash
-  cd ~/container.training/dockercoins
+  cd ~/workspace/container.training/dockercoins
   ```
 
 - Use Compose to build and run all containers:
