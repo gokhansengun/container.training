@@ -180,7 +180,7 @@ The curl command should now output:
 
 - Go to the `stacks` directory:
   ```bash
-  cd ~/container.training/stacks
+  cd ~/workspace/container.training/stacks
   ```
 
 - Build and push the images:

@@ -32,7 +32,7 @@ There is an additional step to make the dashboard available from outside (we'll 
 
 - Create all the dashboard resources, with the following command:
   ```bash
-  kubectl apply -f ~/container.training/k8s/kubernetes-dashboard.yaml
+  kubectl apply -f ~/workspace/container.training/k8s/kubernetes-dashboard.yaml
   ```
 
 ]
@@ -68,7 +68,7 @@ There is an additional step to make the dashboard available from outside (we'll 
 
 - Apply the convenient YAML file, and defeat SSL protection:
   ```bash
-  kubectl apply -f ~/container.training/k8s/socat.yaml
+  kubectl apply -f ~/workspace/container.training/k8s/socat.yaml
   ```
 
 ]
@@ -127,7 +127,7 @@ The dashboard will then ask you which authentication you want to use.
 
 - Grant admin privileges to the dashboard so we can see our resources:
   ```bash
-  kubectl apply -f ~/container.training/k8s/grant-admin-to-dashboard.yaml
+  kubectl apply -f ~/workspace/container.training/k8s/grant-admin-to-dashboard.yaml
   ```
 
 - Reload the dashboard and enjoy!

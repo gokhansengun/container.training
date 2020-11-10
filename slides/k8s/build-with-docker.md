@@ -95,11 +95,11 @@ spec:
   kubectl get svc registry
   ```
 
-- Edit `~/container.training/k8s/docker-build.yaml` to put the port number
+- Edit `~/workspace/container.training/k8s/docker-build.yaml` to put the port number
 
 - Schedule the pod by applying the resource file:
   ```bash
-  kubectl apply -f ~/container.training/k8s/docker-build.yaml
+  kubectl apply -f ~/workspace/container.training/k8s/docker-build.yaml
   ```
 
 - Watch the logs:

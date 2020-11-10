@@ -337,7 +337,7 @@ We'll cover them just after!*
 
 - Go to the `k8s` directory in the repository:
   ```bash
-  cd ~/container.training/k8s
+  cd ~/workspace/container.training/k8s
   ```
 
 - Create a configmap named `haproxy` and holding the configuration file:
@@ -386,7 +386,7 @@ spec:
 
 - Create the HAProxy pod:
   ```bash
-  kubectl apply -f ~/container.training/k8s/haproxy.yaml
+  kubectl apply -f ~/workspace/container.training/k8s/haproxy.yaml
   ```
 
 <!-- ```hide kubectl wait pod haproxy --for condition=ready``` -->
@@ -489,7 +489,7 @@ spec:
 
 - Create the registry pod:
   ```bash
-  kubectl apply -f ~/container.training/k8s/registry.yaml
+  kubectl apply -f ~/workspace/container.training/k8s/registry.yaml
   ```
 
 <!-- ```hide kubectl wait pod registry --for condition=ready``` -->

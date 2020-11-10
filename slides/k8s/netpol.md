@@ -146,7 +146,7 @@ The `curl` command should show us the "Welcome to nginx!" page.
 
 - Apply the policy in this YAML file:
   ```bash
-    kubectl apply -f ~/container.training/k8s/netpol-deny-all-for-testweb.yaml
+    kubectl apply -f ~/workspace/container.training/k8s/netpol-deny-all-for-testweb.yaml
   ```
 
 - Check if we can still access the server:
@@ -188,7 +188,7 @@ spec:
 
 - Apply another policy:
   ```bash
-  kubectl apply -f ~/container.training/k8s/netpol-allow-testcurl-for-testweb.yaml
+  kubectl apply -f ~/workspace/container.training/k8s/netpol-allow-testcurl-for-testweb.yaml
   ```
 
 ]
@@ -354,7 +354,7 @@ spec:
 
 - Apply the network policies:
   ```bash
-  kubectl apply -f ~/container.training/k8s/netpol-dockercoins.yaml
+  kubectl apply -f ~/workspace/container.training/k8s/netpol-dockercoins.yaml
   ```
 
 - Check that we can still access the web UI from outside

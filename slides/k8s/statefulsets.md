@@ -348,7 +348,7 @@ nodes and encryption of gossip traffic) were removed for simplicity.
 
 - Create the stateful set and associated service:
   ```bash
-  kubectl apply -f ~/container.training/k8s/consul.yaml
+  kubectl apply -f ~/workspace/container.training/k8s/consul.yaml
   ```
 
 - Check the logs as the pods come up one after another:

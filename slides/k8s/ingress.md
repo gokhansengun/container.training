@@ -314,7 +314,7 @@ This one is a special case that means "ignore all taints and run anyway."
 
 - Apply the YAML:
   ```bash
-  kubectl apply -f ~/container.training/k8s/traefik.yaml
+  kubectl apply -f ~/workspace/container.training/k8s/traefik.yaml
   ```
 
 ]
@@ -437,7 +437,7 @@ spec:
 
 .exercise[
 
-- Edit the file `~/container.training/k8s/ingress.yaml`
+- Edit the file `~/workspace/container.training/k8s/ingress.yaml`
 
 - Replace A.B.C.D with the IP address of `master-0`
 
@@ -455,7 +455,7 @@ spec:
 
 .exercise[
 
-- Edit the file `~/container.training/k8s/ingress.yaml`
+- Edit the file `~/workspace/container.training/k8s/ingress.yaml`
 
 - Replace `cheddar` with `stilton` (in `name`, `host`, `serviceName`)
 

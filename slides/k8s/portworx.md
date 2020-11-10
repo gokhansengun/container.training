@@ -151,7 +151,7 @@
 
 - Install Portworx:
   ```bash
-  kubectl apply -f ~/container.training/k8s/portworx.yaml
+  kubectl apply -f ~/workspace/container.training/k8s/portworx.yaml
   ```
 
 ]
@@ -273,7 +273,7 @@ parameters:
 
 - Create the Storage Class:
   ```bash
-  kubectl apply -f ~/container.training/k8s/storage-class.yaml
+  kubectl apply -f ~/workspace/container.training/k8s/storage-class.yaml
   ```
 
 - Check that it is now available:
@@ -351,7 +351,7 @@ spec:
 
 - Apply that YAML:
   ```bash
-  kubectl apply -f ~/container.training/k8s/postgres.yaml
+  kubectl apply -f ~/workspace/container.training/k8s/postgres.yaml
   ```
 
 <!-- ```hide kubectl wait pod postgres-0 --for condition=ready``` -->

@@ -131,7 +131,7 @@ spec:
 
 - Create the pod by applying the YAML file:
   ```bash
-  kubectl apply -f ~/container.training/k8s/nginx-with-volume.yaml
+  kubectl apply -f ~/workspace/container.training/k8s/nginx-with-volume.yaml
   ```
 
 - Check the IP address that was allocated to our pod:

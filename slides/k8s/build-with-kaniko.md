@@ -51,7 +51,7 @@
 - Run Kaniko:
   ```bash
   docker run --net host \
-      -v ~/container.training/dockercoins/worker:/workspace \
+      -v ~/workspace/container.training/dockercoins/worker:/workspace \
       gcr.io/kaniko-project/executor \
       --context=/workspace \
       --destination=127.0.0.1:$PORT/worker-kaniko:latest 
@@ -164,7 +164,7 @@ spec:
 
 - Create the pod:
   ```bash
-  kubectl apply -f ~/container.training/k8s/kaniko-build.yaml
+  kubectl apply -f ~/workspace/container.training/k8s/kaniko-build.yaml
   ```
 
 - Watch the logs:

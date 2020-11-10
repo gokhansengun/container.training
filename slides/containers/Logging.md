@@ -195,7 +195,7 @@ will have equal success with Fluent or other logging stacks!*
 - We are going to use a Compose file describing the ELK stack.
 
 ```bash
-$ cd ~/container.training/stacks
+$ cd ~/workspace/container.training/stacks
 $ docker-compose -f elk.yml up -d
 ```
 

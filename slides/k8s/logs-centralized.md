@@ -40,7 +40,7 @@
 
 - Load the YAML file into our cluster:
   ```bash
-  kubectl apply -f ~/container.training/k8s/efk.yaml
+  kubectl apply -f ~/workspace/container.training/k8s/efk.yaml
   ```
 
 ]
