@@ -106,7 +106,7 @@ We need to:
 
 - Install Prometheus on our cluster:
   ```bash
-  helm install stable/prometheus \
+  helm install prom stable/prometheus \
          --set server.service.type=NodePort \
          --set server.persistentVolume.enabled=false
   ```
